@@ -18,9 +18,9 @@
  
  ###המשחק מיועד למחשב.
  
-## ציור הממחיש את המשחק:
+## תמונה הממחישה את המשחק:
 
-![image](https://user-images.githubusercontent.com/58401645/226815544-bc3dc3ea-9d35-486e-9bc1-70ce0ccf668f.png)
+<img width="678" alt="Screenshot 2023-05-14 at 12 39 21" src="https://github.com/GameDev-K-G/1-2-3-Dag-Maluach/assets/58401645/f2d2f9d6-6bce-4979-84cb-e47e37e42496">
 ## רכיבים רשמיים
 * קישור לקובץ רכיבי המשחק הרשמיים :
 [formal-elements.md](https://github.com/GameDev-K-G/1-2-3-/blob/main/formal-elements.md)
