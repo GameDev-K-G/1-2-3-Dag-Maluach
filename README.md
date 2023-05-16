@@ -47,11 +47,17 @@
 [לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/1-2-3-Dag-Maluach/blob/main/Assets/Scripts/Rotation.cs)
 
 
-3)השלישי הוא אויב הרודף אחרי השחקן- כלומר כל מיקום שהשחקן ימצא בו הוא יהיה המטרה שאליו ירצה להגיע אויב.
-  כאשר הוא יגיע תופיע הודעה שהוא אכן הגיע , אם השחקן יצליח לחמוק ממנו ההודעה תעלם!
-  
-[לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/HW8_3_AI/blob/main/Assets/Scripts/2-npc/Chaser.cs)
+3)מנהל המשחק- Level Controll
+יש לו כמה סקריפטים הוא מטפל בהם:
+א. LevelStarter - מפעיל את הספירה, לאחר הספירה נותן רשות לשחקן לזוז ואומר לסופרת להסתובב כדי שהשחקן יתחיל לשחק, ומפעיל את הטיימר של השחקן.
 
+
+[לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/1-2-3-Dag-Maluach/blob/main/Assets/Scripts/Environment/LevelStarter.cs)
+  
+
+ב. GameOverSequence - עוצר את השעון, מפעיל מוזיקה של פסילה ומפעיל את המסך הסיום.
+
+[לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/1-2-3-Dag-Maluach/blob/main/Assets/Scripts/Environment/GameOverSequence.cs)
 
 4)הרביעי הוא אויב שרוצה פגוע במנוע- האויב מנסה להגיע למנוע שבאמצע הביניין כדי לפגוע בו.
   כאשר הוא יגיע תשבר חלון הזכוכית ותופיע הודעה שהוא אכן הגיע!
