@@ -47,9 +47,21 @@
 [לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/1-2-3-Dag-Maluach/blob/main/Assets/Scripts/Rotation.cs)
 
 
+3)השלישי הוא אויב הרודף אחרי השחקן- כלומר כל מיקום שהשחקן ימצא בו הוא יהיה המטרה שאליו ירצה להגיע אויב.
+  כאשר הוא יגיע תופיע הודעה שהוא אכן הגיע , אם השחקן יצליח לחמוק ממנו ההודעה תעלם!
+  
+[לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/HW8_3_AI/blob/main/Assets/Scripts/2-npc/Chaser.cs)
+
+
+4)הרביעי הוא אויב שרוצה פגוע במנוע- האויב מנסה להגיע למנוע שבאמצע הביניין כדי לפגוע בו.
+  כאשר הוא יגיע תשבר חלון הזכוכית ותופיע הודעה שהוא אכן הגיע!
+    
+[לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/HW8_3_AI/blob/main/Assets/Scripts/2-npc/Chaser.cs)
+
+
 
 * קישור למשחק ב  :
-[itch.io](https://gamedevk-g.itch.io/dagmaluach)
+[itch.io](https://gamedevk-g.itch.io/dagmaluach3d)
  
 ## תהנו :smiley:
 </div>
