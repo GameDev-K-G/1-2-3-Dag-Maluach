@@ -16,17 +16,24 @@
   במשחק יש אפשרות להזמין חברים להתחרות נגדך במשחק- הראשון שמגיע בהצלחה לקו הסיום מנצח במשחק.
 
  
- ###המשחק מיועד למחשב.
+ ### המשחק מיועד למחשב.
  
 ## תמונה הממחישה את המשחק:
 
 <img width="678" alt="Screenshot 2023-05-14 at 12 39 21" src="https://github.com/GameDev-K-G/1-2-3-Dag-Maluach/assets/58401645/f2d2f9d6-6bce-4979-84cb-e47e37e42496">
+
+
 ## רכיבים רשמיים
 * קישור לקובץ רכיבי המשחק הרשמיים :
 [formal-elements.md](https://github.com/GameDev-K-G/1-2-3-/blob/main/formal-elements.md)
 
+
  ## פירוט הקוד:
+ 1)תזוזת השחקן:
  
+
+[לחץ כאן על מנת לראות את הסקריפט](https://github.com/GameDev-K-G/1-2-3-Dag-Maluach/blob/main/Assets/Scripts/Player/InputMover.cs)
+
 
 
 * קישור למשחק ב  :
