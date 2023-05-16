@@ -24,6 +24,11 @@
 ## רכיבים רשמיים
 * קישור לקובץ רכיבי המשחק הרשמיים :
 [formal-elements.md](https://github.com/GameDev-K-G/1-2-3-/blob/main/formal-elements.md)
+
+ ## פירוט הקוד:
+ 
+
+
 * קישור למשחק ב  :
 [itch.io](https://gamedevk-g.itch.io/dagmaluach)
  
