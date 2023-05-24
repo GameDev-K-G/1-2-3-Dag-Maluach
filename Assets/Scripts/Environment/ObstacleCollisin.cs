@@ -22,12 +22,22 @@ public class ObstacleCollisin : MonoBehaviour
 
      IEnumerator JumpSequence()
      {
-        yield return new WaitForSeconds(2.45f);
+        yield return new WaitForSeconds(2.0f);
         InputMover.notCrash = true;
-        if(Rotation.looking == false)
-        charModel.GetComponent<Animator>().Play("Idle");    
         thePlayer.GetComponent<InputMover>().enabled = true;
-    
+        while (Rotation.looking == true)
+        {
+            yield return new WaitForSeconds(0.1f);
+
+        }
+        if(Rotation.looking == false){
+            if(thePlayer.transform.position.y > 0.0)
+            {
+            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 0.3f , thePlayer.transform.position.z-1f);
+            }
+
+            charModel.GetComponent<Animator>().Play("Idle");    
+        }
      } 
 
    
