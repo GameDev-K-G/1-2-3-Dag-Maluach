@@ -142,6 +142,7 @@ public class InputMover: MonoBehaviour {
         if(other.tag == "Finish")
         {
             finish = true;
+            canMove=false;
             GameObject.Find("LevelControll").SendMessage("Finish");//מסתיים הספירה של הזמן
             levelControll.GetComponent<Win>().enabled = true;//הפעלה של מסך הסיום
             player.GetComponent<Animator>().Play("Dancing Maraschino Step");      

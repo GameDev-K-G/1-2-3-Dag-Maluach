@@ -71,8 +71,6 @@ public class Rotation : MonoBehaviour
             {             
                 girl.GetComponent<Animator>().Play("ForwardRotation");
 
-                charModel.GetComponent<Animator>().Play("Northern Soul Spin Combo");
-                // yield return new WaitForSeconds(0.05f);
                 looking = true;
 
                 charModel.GetComponent<Animator>().Play("Looking Around 1");
