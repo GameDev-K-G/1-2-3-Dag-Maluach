@@ -22,7 +22,7 @@ public class ObstacleCollisin : MonoBehaviour
 
      IEnumerator JumpSequence()
      {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         InputMover.notCrash = true;
         thePlayer.GetComponent<InputMover>().enabled = true;
         while (Rotation.looking == true)
@@ -33,7 +33,7 @@ public class ObstacleCollisin : MonoBehaviour
         if(Rotation.looking == false){
             if(thePlayer.transform.position.y > 0.0)
             {
-            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 0.3f , thePlayer.transform.position.z-1f);
+            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 0.3f , thePlayer.transform.position.z);
             }
 
             charModel.GetComponent<Animator>().Play("Idle");    
