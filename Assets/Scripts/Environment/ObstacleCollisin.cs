@@ -8,8 +8,10 @@ public class ObstacleCollisin : MonoBehaviour
     public GameObject charModel;
     public AudioSource crashThud;
     public GameObject mainCam;
+    
     void OnTriggerEnter(Collider other)
     {
+        
         InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
         // this.gameObject.GetComponent<BoxCollider>().enabled = false; 
         thePlayer.GetComponent<InputMover>().enabled = false;

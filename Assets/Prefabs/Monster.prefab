@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6947468525587639932}
   - component: {fileID: 6947468525587639933}
   - component: {fileID: 6577598739996787436}
+  - component: {fileID: 2844069016141063215}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Enemy
@@ -116,6 +117,20 @@ MonoBehaviour:
   charModel: {fileID: 0}
   crashThud: {fileID: 0}
   mainCam: {fileID: 0}
+--- !u!114 &2844069016141063215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947468525587639928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8043d51a825944985bf5c732ae90172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  moveDistance: 10
 --- !u!1 &6947468525771798067
 GameObject:
   m_ObjectHideFlags: 0

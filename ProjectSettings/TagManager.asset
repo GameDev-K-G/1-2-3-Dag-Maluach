@@ -10,6 +10,7 @@ TagManager:
   - Enemy Body
   - speedBoost
   - Pickable
+  - object
   layers:
   - Default
   - TransparentFX
