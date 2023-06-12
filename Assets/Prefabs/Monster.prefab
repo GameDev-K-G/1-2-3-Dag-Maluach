@@ -124,13 +124,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6947468525587639928}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8043d51a825944985bf5c732ae90172e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minSpeed: 3
+  maxSpeed: 6
   moveSpeed: 5
-  moveDistance: 10
+  minMoveDistance: 3
+  maxMoveDistance: 10
+  minCollisionDistance: 1
 --- !u!1 &6947468525771798067
 GameObject:
   m_ObjectHideFlags: 0

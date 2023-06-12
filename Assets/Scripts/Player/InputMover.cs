@@ -101,7 +101,7 @@ public class InputMover: MonoBehaviour {
              if(comingDown == true)
             {
                 transform.Translate(Vector3.up * Time.deltaTime * -15, Space.World);//חזרה לאדמה
-                notMove = true;
+                 notMove = true;
             }
         }
        
@@ -131,6 +131,7 @@ public class InputMover: MonoBehaviour {
         notMove = false;
         player.GetComponent<Animator>().Play("Idle");        
     }
+    
 
     void OnTriggerEnter(Collider other)
     {

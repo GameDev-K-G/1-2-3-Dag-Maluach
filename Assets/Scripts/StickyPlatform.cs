@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class StickyPlatform : MonoBehaviour
 {
-        public GameObject thePlayer;
+    public GameObject thePlayer;
 
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
-       InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
-         thePlayer.GetComponent<InputMover>().enabled = false;
+    //    InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
 
          if (collision.gameObject.name == "Player")
         {
+            thePlayer.GetComponent<InputMover>().enabled = false;
             collision.gameObject.transform.SetParent(transform);
+            StartCoroutine(Moving());
+
         }
-        StartCoroutine(Moving());
     }
    
      IEnumerator Moving()
      {
         yield return new WaitForSeconds(0.1f);
-        InputMover.notCrash = true;
+        // InputMover.notCrash = true;
         thePlayer.GetComponent<InputMover>().enabled = true;
      }
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.name == "Player")
         {
