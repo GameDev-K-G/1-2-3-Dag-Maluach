@@ -9,12 +9,15 @@ public class GameOverSequence : MonoBehaviour
     public AudioSource faildAudio;
     public GameObject endScreen;
     public GameObject levelControll;
+    public GameObject highscore;
+    
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        
         Timer.SetActive(false);  
         StartCoroutine(EndScreen());   
     }
@@ -25,6 +28,15 @@ public class GameOverSequence : MonoBehaviour
         faildAudio.Play();
         yield return new WaitForSeconds(4f);
         endScreen.SetActive(true);   
+    }
+     public void saveresult()
+    {
+        
+        
+
+        highscore.SetActive(true);
+        
+       
     }
     public void Restart()
     {
