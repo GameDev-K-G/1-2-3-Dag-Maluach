@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleCollisin : MonoBehaviour
+public class ThornHit : MonoBehaviour
 {
+ 
     public GameObject thePlayer;
     public GameObject charModel;
     public AudioSource crashThud;
@@ -22,22 +23,12 @@ public class ObstacleCollisin : MonoBehaviour
 
      IEnumerator JumpSequence()
      {
-        yield return new WaitForSeconds(1.0f);
-        InputMover.notCrash = true;
-        thePlayer.GetComponent<InputMover>().enabled = true;
-        while (Rotation.looking == true)
+        
         {
             yield return new WaitForSeconds(0.1f);
 
         }
-        if(Rotation.looking == false){
-            if(thePlayer.transform.position.y > 1.0)
-            {
-            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 1.0f , thePlayer.transform.position.z);
-            }
-
-            charModel.GetComponent<Animator>().Play("Idle");    
-        }
+      
      } 
 
    
