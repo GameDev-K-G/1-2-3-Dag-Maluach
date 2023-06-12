@@ -6,13 +6,13 @@ public class StickyPlatform : MonoBehaviour
 {
     public GameObject thePlayer;
 
-    void OnTriggerEnter(Collider collision)
+    void OnCollisionEnter(Collision collision)
     {
     //    InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
 
          if (collision.gameObject.name == "Player")
         {
-            thePlayer.GetComponent<InputMover>().enabled = false;
+            // thePlayer.GetComponent<InputMover>().enabled = false;
             collision.gameObject.transform.SetParent(transform);
             StartCoroutine(Moving());
 
@@ -23,9 +23,9 @@ public class StickyPlatform : MonoBehaviour
      {
         yield return new WaitForSeconds(0.1f);
         // InputMover.notCrash = true;
-        thePlayer.GetComponent<InputMover>().enabled = true;
+        // thePlayer.GetComponent<InputMover>().enabled = true;
      }
-    private void OnTriggerExit(Collider collision)
+    private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.name == "Player")
         {

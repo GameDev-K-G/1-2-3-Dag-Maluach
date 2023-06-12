@@ -7,9 +7,12 @@ using UnityEngine.InputSystem;
 /**
  * This component moves its object when the player clicks the arrow keys.
  */
+ [RequireComponent(typeof(CharacterController))]
+
 public class InputMover: MonoBehaviour {
     [Tooltip("Speed of movement, in meters per second")]
     [SerializeField] float speed = 10f;
+    [SerializeField] float gravity = 9.81f;
     [SerializeField] GameObject player;
     [SerializeField] InputAction moveHorizontal = new InputAction(type: InputActionType.Button);
     [SerializeField] InputAction moveVertical  = new InputAction(type: InputActionType.Button);
@@ -27,7 +30,8 @@ public class InputMover: MonoBehaviour {
     float currentSpeed = 5; 
     public static bool finish = false;
     public AudioSource speedAudio;
-
+    private CharacterController cc;
+ 
     void OnEnable()  {
         moveHorizontal.Enable();
         moveVertical.Enable();
@@ -38,17 +42,21 @@ public class InputMover: MonoBehaviour {
         moveHorizontal.Disable();
         moveVertical.Disable();
     }
-    void Start(){
-        this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
+    void Start()
+    {
+        // this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
         currentSpeed= speed;
+        cc = GetComponent<CharacterController>();
     }
+    Vector3 velocity = new Vector3(0,0,0);
+
     void Update() 
     {
-        if(this.transform.parent==null && isJumping==false && !Input.GetKey(KeyCode.Space))
-        {
-            this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
+        // if(this.transform.parent==null && isJumping==false && !Input.GetKey(KeyCode.Space))
+        // {
+        //     this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
 
-        }
+        // }
         if(canMove == true)
         {
             if(boosting == true) 
@@ -72,7 +80,7 @@ public class InputMover: MonoBehaviour {
                     injuredTimer = 0;
                     injured = false;
                 }
-            }
+            } 
             if(Input.GetKey(KeyCode.Space))
             {
                 if(isJumping == false)
@@ -85,22 +93,31 @@ public class InputMover: MonoBehaviour {
             }
        
                 
-
-            float horizontal = moveHorizontal.ReadValue<float>();
-            float vertical = moveVertical.ReadValue<float>();
-            Vector3 movementVector = new Vector3(horizontal, 0, vertical) * currentSpeed * Time.deltaTime;
-            transform.position += movementVector;
-
+            if (cc.isGrounded) 
+            {
+                velocity.x = moveHorizontal.ReadValue<float>() * currentSpeed;
+                velocity.z = moveVertical.ReadValue<float>() * currentSpeed;
+                // Vector3 movementVector = new Vector3(horizontal, 0, vertical) * currentSpeed * Time.deltaTime;
+                // transform.position += movementVector;
+            }
+            
+            else {
+                velocity.y -= gravity*Time.deltaTime;
+            }
+             velocity = transform.TransformDirection(velocity);
+             cc.Move(velocity * Time.deltaTime);
         }
         if(isJumping == true)
         {
-            if(comingDown == false)
-            {
-                transform.Translate(Vector3.up * Time.deltaTime * 15, Space.World);//קפיצה למעלה
-            }
+            // if(comingDown == false)
+            // {
+                velocity.y += gravity*Time.deltaTime;
+                // transform.Translate(Vector3.up * Time.deltaTime * 15, Space.World);//קפיצה למעלה
+            // }
              if(comingDown == true)
             {
-                transform.Translate(Vector3.up * Time.deltaTime * -15, Space.World);//חזרה לאדמה
+                // transform.Translate(Vector3.up * Time.deltaTime * -15, Space.World);//חזרה לאדמה
+                velocity.y -= gravity*Time.deltaTime;
                  notMove = true;
             }
         }
@@ -160,7 +177,18 @@ public class InputMover: MonoBehaviour {
 
         }
 
+    }
+     void OnCollisionEnter(Collision collision)
+    {
+    //    InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
 
+         if (collision.gameObject.tag == "Enemy")
+        {
+            // thePlayer.GetComponent<InputMover>().enabled = false;
+           currentSpeed = currentSpeed/5;
+            injured = true;
+
+        }
     }
  
 

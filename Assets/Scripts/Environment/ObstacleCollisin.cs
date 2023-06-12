@@ -7,26 +7,30 @@ public class ObstacleCollisin : MonoBehaviour
     public GameObject thePlayer;
     public GameObject charModel;
     public AudioSource crashThud;
-    public GameObject mainCam;
+    // public GameObject mainCam;
     
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.name == "Player")
+        {
+            InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
+            // this.gameObject.GetComponent<BoxCollider>().enabled = false; 
+            // thePlayer.GetComponent<InputMover>().enabled = false;
+            charModel.GetComponent<Animator>().Play("Stumble Backwards");//מפעיל את הנפילה אחורה
+            crashThud.Play();
+            // mainCam.GetComponent<Animator>().enabled = true;
+            StartCoroutine(JumpSequence());
+        }
         
-        InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
-        // this.gameObject.GetComponent<BoxCollider>().enabled = false; 
-        thePlayer.GetComponent<InputMover>().enabled = false;
-        charModel.GetComponent<Animator>().Play("Stumble Backwards");//מפעיל את הנפילה אחורה
-        crashThud.Play();
-        // mainCam.GetComponent<Animator>().enabled = true;
-        StartCoroutine(JumpSequence());
+       
 
     }
 
      IEnumerator JumpSequence()
      {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
         InputMover.notCrash = true;
-        thePlayer.GetComponent<InputMover>().enabled = true;
+        // thePlayer.GetComponent<InputMover>().enabled = true;
         while (Rotation.looking == true)
         {
             yield return new WaitForSeconds(0.1f);
@@ -38,7 +42,7 @@ public class ObstacleCollisin : MonoBehaviour
             thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 1.0f , thePlayer.transform.position.z);
             }
 
-            charModel.GetComponent<Animator>().Play("Idle");    
+            // charModel.GetComponent<Animator>().Play("Idle");    
         }
      } 
 
