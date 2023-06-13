@@ -11,6 +11,6 @@ public class NameInputField : MonoBehaviour
     public void StoreName()
     {
         thename = inputField.text;
-        textdisplay.text = "Welcome " + thename ;
+        textdisplay.text = thename ;
     }
 }

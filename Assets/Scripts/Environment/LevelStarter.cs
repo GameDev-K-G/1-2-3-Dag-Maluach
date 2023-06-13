@@ -39,7 +39,7 @@ public class LevelStarter : MonoBehaviour
      }
         public void toContinueButton()
      {
-         mainw.gameObject.SetActive(false);
+          mainw.gameObject.SetActive(false);
           inputField.gameObject.SetActive(false);
 
           Explantation.SetActive(true);
