@@ -173,7 +173,7 @@ public class InputMover: MonoBehaviour {
     {
         yield return new WaitForSeconds(0.45f);
         comingDown = true;
-        yield return new WaitForSeconds(1.10f);
+        yield return new WaitForSeconds(0.45f);
         isJumping = false;
         comingDown = false;
         notMove = false;

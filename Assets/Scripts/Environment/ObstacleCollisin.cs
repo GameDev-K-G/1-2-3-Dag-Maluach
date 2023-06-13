@@ -14,7 +14,7 @@ public class ObstacleCollisin : MonoBehaviour
         if(collision.gameObject.name == "Player")
         {
             InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
-            // this.gameObject.GetComponent<BoxCollider>().enabled = false; 
+            this.gameObject.GetComponent<BoxCollider>().enabled = false; 
             // thePlayer.GetComponent<InputMover>().enabled = false;
             charModel.GetComponent<Animator>().Play("Stumble Backwards");//מפעיל את הנפילה אחורה
             crashThud.Play();
@@ -30,6 +30,9 @@ public class ObstacleCollisin : MonoBehaviour
      {
         yield return new WaitForSeconds(2f);
         InputMover.notCrash = true;
+            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, thePlayer.transform.position.y , thePlayer.transform.position.z-2.0f);
+            this.gameObject.GetComponent<BoxCollider>().enabled = true; 
+
         // thePlayer.GetComponent<InputMover>().enabled = true;
         while (Rotation.looking == true)
         {

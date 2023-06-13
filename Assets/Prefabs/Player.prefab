@@ -238,6 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  gravity: 9.81
   player: {fileID: 3602398481161406002}
   moveHorizontal:
     m_Name: Move Horizontal
