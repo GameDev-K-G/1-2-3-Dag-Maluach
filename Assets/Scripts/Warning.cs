@@ -8,8 +8,11 @@ public class Warning : MonoBehaviour
 
      void OnTriggerEnter(Collider other)
     {
-        warningText.SetActive(true);   
-        StartCoroutine(WarningPlayer());   
+        if(other.gameObject.name == "Player"){
+            warningText.SetActive(true);   
+            StartCoroutine(WarningPlayer());   
+        }
+       
 
     }
       IEnumerator WarningPlayer()
