@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Level2Starter : MonoBehaviour
 {
      public GameObject countDown3;
@@ -12,11 +12,17 @@ public class Level2Starter : MonoBehaviour
      public AudioSource counting;
      public AudioSource startAudio;
      public GameObject levelControll;
+     public static string name ;
 
+    
      void Start()
      {
+          name = NameInputField.thename1;
+          Debug.Log(name);
+        
           StartCoroutine(CountSequence());   
      }
+     
     
      IEnumerator CountSequence()
      {
@@ -39,4 +45,5 @@ public class Level2Starter : MonoBehaviour
           Timer.startTimer = true;
 
      }
+     
 }

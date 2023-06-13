@@ -31,6 +31,7 @@ public class GameOverSequence : MonoBehaviour
     }
      public void saveresult()
     {
+        endScreen.SetActive(false);;
         
         
 
@@ -41,7 +42,7 @@ public class GameOverSequence : MonoBehaviour
     public void Restart()
     {
 
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Rotation.StartGame = false;
     }
 }
