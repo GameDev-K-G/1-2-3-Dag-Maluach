@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class LevelStarter : MonoBehaviour
 {
@@ -14,17 +18,32 @@ public class LevelStarter : MonoBehaviour
      public AudioSource startAudio;
      public GameObject levelControll;
      public GameObject Explantation2;
+     //public TMP_InputField inputField;
+     public TMP_InputField inputField;
+     public Image mainw;
+     
 
 
+    
 
      public void StartGame()
      {
+          // OpenNameInputDialog();
           StartCoroutine(CountSequence());   
      }
       public void ContinueButton()
      {
           Explantation.SetActive(false);
           Explantation2.SetActive(true);   
+   
+     }
+        public void toContinueButton()
+     {
+         mainw.gameObject.SetActive(false);
+          inputField.gameObject.SetActive(false);
+
+          Explantation.SetActive(true);
+             
    
      }
      IEnumerator CountSequence()
@@ -48,4 +67,7 @@ public class LevelStarter : MonoBehaviour
           Timer.startTimer = true;
 
      }
+   
+
+     
 }
