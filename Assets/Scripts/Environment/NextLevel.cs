@@ -9,6 +9,7 @@ public class NextLevel : MonoBehaviour
     [SerializeField] string sceneName;
     public void Restart()
     {
-            SceneManager.LoadScene(sceneName);    // Input can either be a serial number or a name; 
+         InputMover.finish = false;
+         SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

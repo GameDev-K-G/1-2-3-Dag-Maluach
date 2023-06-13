@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4510929, g: 0.49963516, b: 0.56726074, a: 1}
+  m_IndirectSpecularColor: {r: 0.45109266, g: 0.49963456, b: 0.56726027, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25404,6 +25404,7 @@ GameObject:
   - component: {fileID: 1445761225}
   - component: {fileID: 1445761226}
   - component: {fileID: 1445761227}
+  - component: {fileID: 1445761228}
   m_Layer: 0
   m_Name: LevelControll
   m_TagString: Untagged
@@ -25513,6 +25514,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level2
+--- !u!114 &1445761228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445761221}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e7de1e74bbd4b8eadbf4ae338b9c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countDown3: {fileID: 217370934}
+  countDown2: {fileID: 202703977}
+  countDown1: {fileID: 438754203}
+  countDownGo: {fileID: 1476748488}
+  clock: {fileID: 1860354636}
+  counting: {fileID: 1434870025}
+  startAudio: {fileID: 1383067463}
+  levelControll: {fileID: 1445761221}
 --- !u!1 &1453559967
 GameObject:
   m_ObjectHideFlags: 0
@@ -27316,7 +27337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537583770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.05, y: 1, z: -7.97}
+  m_LocalPosition: {x: 5.05, y: 1, z: -7.2}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
