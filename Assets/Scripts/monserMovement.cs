@@ -67,7 +67,7 @@ public class monserMovement : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("object"))
         {
