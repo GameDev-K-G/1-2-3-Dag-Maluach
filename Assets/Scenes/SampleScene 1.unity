@@ -23430,6 +23430,7 @@ GameObject:
   - component: {fileID: 1445761224}
   - component: {fileID: 1445761225}
   - component: {fileID: 1445761226}
+  - component: {fileID: 1445761227}
   m_Layer: 0
   m_Name: LevelControll
   m_TagString: Untagged
@@ -23522,6 +23523,19 @@ MonoBehaviour:
   countingAudio: {fileID: 1434870025}
   Timer: {fileID: 1860354636}
   VictoryAudio: {fileID: 951133409}
+--- !u!114 &1445761227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445761221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a572e55e027145a28b577bd53dd9aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Level2
 --- !u!1 &1457454299
 GameObject:
   m_ObjectHideFlags: 0
@@ -24825,7 +24839,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1521576878}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445761227}
+        m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1521576878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24940,13 +24966,13 @@ Transform:
   - {fileID: 682026687}
   - {fileID: 1698035852}
   - {fileID: 1543693679}
+  - {fileID: 1863922662}
   - {fileID: 1666900757}
-  - {fileID: 209200336}
   - {fileID: 1596342038}
+  - {fileID: 209200336}
+  - {fileID: 71644655}
   - {fileID: 1927388899}
   - {fileID: 1581845225}
-  - {fileID: 1863922662}
-  - {fileID: 71644655}
   m_Father: {fileID: 1004088181}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25197,7 +25223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  gravity: 7000
+  gravity: 1000
   player: {fileID: 1908737161}
   moveHorizontal:
     m_Name: Move Horizontal
