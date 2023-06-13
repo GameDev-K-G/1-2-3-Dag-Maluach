@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 691252026673391599}
   m_Layer: 0
   m_Name: FallTree
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +116,6 @@ MonoBehaviour:
   thePlayer: {fileID: 0}
   charModel: {fileID: 0}
   crashThud: {fileID: 0}
-  mainCam: {fileID: 0}
 --- !u!54 &691252026673391599
 Rigidbody:
   m_ObjectHideFlags: 0
