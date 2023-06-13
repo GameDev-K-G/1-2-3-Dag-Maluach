@@ -37,10 +37,10 @@ public class ObstacleCollisin : MonoBehaviour
 
         }
         if(Rotation.looking == false){
-            if(thePlayer.transform.position.y > 1.0)
-            {
-            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 1.0f , thePlayer.transform.position.z);
-            }
+            // if(thePlayer.transform.position.y > 1.0)
+            // {
+            // thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 1.0f , thePlayer.transform.position.z);
+            // }
 
             // charModel.GetComponent<Animator>().Play("Idle");    
         }
