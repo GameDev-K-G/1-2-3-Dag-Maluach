@@ -20,6 +20,7 @@ public class LevelStarter : MonoBehaviour
      public GameObject Explantation2;
      //public TMP_InputField inputField;
      public TMP_InputField inputField;
+     public Image mainw;
      
 
 
@@ -38,6 +39,7 @@ public class LevelStarter : MonoBehaviour
      }
         public void toContinueButton()
      {
+         mainw.gameObject.SetActive(false);
           inputField.gameObject.SetActive(false);
 
           Explantation.SetActive(true);
