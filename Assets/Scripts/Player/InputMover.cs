@@ -44,7 +44,6 @@ public class InputMover: MonoBehaviour {
     }
     void Start()
     {
-        // this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
         currentSpeed= speed;
         cc = GetComponent<CharacterController>();
     }
@@ -52,11 +51,7 @@ public class InputMover: MonoBehaviour {
 
     void Update() 
     {
-        // if(this.transform.parent==null && isJumping==false && !Input.GetKey(KeyCode.Space))
-        // {
-        //     this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
-
-        // }
+       
         if(canMove == true)
         {
             if(boosting == true) 
@@ -67,7 +62,7 @@ public class InputMover: MonoBehaviour {
                     currentSpeed = speed;
                     boostTimer = 0;
                     boosting = false;
-                    player.GetComponent<Animator>().Play("Idle");  
+                    // player.GetComponent<Animator>().Play("Idle");  
 
                 }
             }
@@ -81,49 +76,83 @@ public class InputMover: MonoBehaviour {
                     injured = false;
                 }
             } 
-            if(Input.GetKey(KeyCode.Space))
-            {
-                if(isJumping == false)
+            // if(Input.GetKey(KeyCode.Space))
+            // {
+            //     if(isJumping == false)
+            //     {
+            //         notMove= false;//לא יופעל על השחקן האנימציה שהוא לא זז
+            //         isJumping = true;
+            //         player.GetComponent<Animator>().Play("Jump");
+            //         StartCoroutine(JumpSequence());
+            //     }
+            // }
+               float horizontal = moveHorizontal.ReadValue<float>();
+               float vertical = moveVertical.ReadValue<float>();
+                Vector3 movementVector = new Vector3(horizontal, 0, vertical) * currentSpeed * Time.deltaTime;
+                
+                 if(Input.GetKey(KeyCode.Space))
                 {
-                    notMove= false;//לא יופעל על השחקן האנימציה שהוא לא זז
-                    isJumping = true;
+                    
                     player.GetComponent<Animator>().Play("Jump");
                     StartCoroutine(JumpSequence());
+                    isJumping= true;
+                    notMove= true;
+
+                    if(transform.position.y<8){
+                        isJumping= true;
+                        // StartCoroutine(JumpSequence());
+                        movementVector = new Vector3(horizontal, gravity , vertical) * currentSpeed * Time.deltaTime;
+                        transform.position += movementVector;
+                    }
+                    else{
+                        if(transform.parent == null){
+                            movementVector = new Vector3(horizontal, (-transform.position.y+1) , vertical) * currentSpeed * Time.deltaTime;
+                            transform.position += movementVector;
+                        }
+                        
+                    }
+                    
+
+
                 }
-            }
-       
-                
-            if (cc.isGrounded) 
+           else if (cc.isGrounded) 
             {
-                velocity.x = moveHorizontal.ReadValue<float>() * currentSpeed;
-                velocity.z = moveVertical.ReadValue<float>() * currentSpeed;
-                // Vector3 movementVector = new Vector3(horizontal, 0, vertical) * currentSpeed * Time.deltaTime;
-                // transform.position += movementVector;
+                  movementVector = new Vector3(horizontal, 0, vertical) * currentSpeed * Time.deltaTime;
+               
+               
+                transform.position += movementVector;
             }
             
-            else {
-                velocity.y -= gravity*Time.deltaTime;
+            else if(transform.parent == null)
+             {
+                movementVector = new Vector3(horizontal, (-transform.position.y+1) , vertical) * currentSpeed * Time.deltaTime;
+                transform.position += movementVector;
             }
-             velocity = transform.TransformDirection(velocity);
-             cc.Move(velocity * Time.deltaTime);
-        }
-        if(isJumping == true)
-        {
-            // if(comingDown == false)
-            // {
-                velocity.y += gravity*Time.deltaTime;
-                // transform.Translate(Vector3.up * Time.deltaTime * 15, Space.World);//קפיצה למעלה
-            // }
-             if(comingDown == true)
-            {
-                // transform.Translate(Vector3.up * Time.deltaTime * -15, Space.World);//חזרה לאדמה
-                velocity.y -= gravity*Time.deltaTime;
-                 notMove = true;
+            else
+             {
+                movementVector = new Vector3(horizontal, 0 , vertical) * currentSpeed * Time.deltaTime;
+                transform.position += movementVector;
             }
+            //  velocity = transform.TransformDirection(velocity);
+            //  cc.Move(velocity * Time.deltaTime);
         }
+        // if(isJumping == true)
+        // {
+        //     // if(comingDown == false)
+        //     // {
+        //         // velocity.y += gravity*Time.deltaTime;
+        //         transform.Translate(Vector3.up * Time.deltaTime * 15 *Time.deltaTime, Space.World);//קפיצה למעלה
+        //     // }
+        //      if(comingDown == true)
+        //     {
+        //         transform.Translate(Vector3.up * Time.deltaTime * -15 * Time.deltaTime, Space.World);//חזרה לאדמה
+        //         // velocity.y -= gravity*Time.deltaTime;
+        //          notMove = true;
+        //     }
+        // }
        
 
-       if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow)  && !Input.GetKey(KeyCode.LeftArrow)  && !Input.GetKey(KeyCode.RightArrow) && notMove == false && notCrash == true && Rotation.looking == false && !finish)
+       if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.LeftArrow)  && !Input.GetKey(KeyCode.RightArrow) && notMove == false && notCrash == true && Rotation.looking == false && !finish)
         {  
             if(!isJumping)
             {
@@ -132,9 +161,11 @@ public class InputMover: MonoBehaviour {
             
         }
 
-        else if(notCrash == true && Rotation.looking == false && isJumping == false && !finish)
+        else if(notCrash == true && Rotation.looking == false && isJumping == false && !finish && !Input.GetKey(KeyCode.Space))
         {
+            if(!Input.GetKey(KeyCode.Space)){
               player.GetComponent<Animator>().Play("Slow Run");  
+            }
         }
 
     }  
@@ -142,11 +173,10 @@ public class InputMover: MonoBehaviour {
     {
         yield return new WaitForSeconds(0.45f);
         comingDown = true;
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(1.10f);
         isJumping = false;
         comingDown = false;
         notMove = false;
-        player.GetComponent<Animator>().Play("Idle");        
     }
     
 
@@ -155,14 +185,13 @@ public class InputMover: MonoBehaviour {
         if(other.tag == "speedBoost")
         {
             speedAudio.Play();
-            player.GetComponent<Animator>().Play("Fast Run");
-            currentSpeed = (2 * currentSpeed);
+            currentSpeed += (1.7f * currentSpeed);
             boosting = true;
             Destroy(other.gameObject);
         }
           if(other.tag == "Enemy")
         {
-            currentSpeed = currentSpeed/5;
+            currentSpeed -= currentSpeed/2;
             injured = true;
         }
         if(other.tag == "Finish")
@@ -180,12 +209,9 @@ public class InputMover: MonoBehaviour {
     }
      void OnCollisionEnter(Collision collision)
     {
-    //    InputMover.notCrash = false;//השחקן לא ימשיך לרוץ
-
          if (collision.gameObject.tag == "Enemy")
         {
-            // thePlayer.GetComponent<InputMover>().enabled = false;
-           currentSpeed = currentSpeed/5;
+           currentSpeed = currentSpeed/2;
             injured = true;
 
         }

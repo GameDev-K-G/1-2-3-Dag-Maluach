@@ -14,7 +14,7 @@ public class StickyPlatform : MonoBehaviour
         {
             // thePlayer.GetComponent<InputMover>().enabled = false;
             collision.gameObject.transform.SetParent(transform);
-            StartCoroutine(Moving());
+            // StartCoroutine(Moving());
 
         }
     }
@@ -22,7 +22,6 @@ public class StickyPlatform : MonoBehaviour
      IEnumerator Moving()
      {
         yield return new WaitForSeconds(0.1f);
-        // InputMover.notCrash = true;
         // thePlayer.GetComponent<InputMover>().enabled = true;
      }
     private void OnCollisionExit(Collision collision)
