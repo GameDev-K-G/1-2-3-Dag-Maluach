@@ -28,7 +28,7 @@ public class ObstacleCollisin : MonoBehaviour
 
      IEnumerator JumpSequence()
      {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(2f);
         InputMover.notCrash = true;
         // thePlayer.GetComponent<InputMover>().enabled = true;
         while (Rotation.looking == true)
