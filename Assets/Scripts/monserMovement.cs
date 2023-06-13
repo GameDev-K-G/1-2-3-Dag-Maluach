@@ -71,7 +71,7 @@ public class monserMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("object"))
         {
-            Debug.Log("here");
+            
             // Calculate the direction away from the collided object
             Vector3 collisionDirection = transform.position - other.transform.position;
 
