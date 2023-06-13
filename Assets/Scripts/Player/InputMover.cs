@@ -198,12 +198,11 @@ public class InputMover: MonoBehaviour {
         {
             finish = true;
             canMove=false;
+            Rotation.StartGame = false;
             GameObject.Find("LevelControll").SendMessage("Finish");//מסתיים הספירה של הזמן
             levelControll.GetComponent<Win>().enabled = true;//הפעלה של מסך הסיום
             player.GetComponent<Animator>().Play("Dancing Maraschino Step");      
             girl.GetComponent<Animator>().Play("Sitting Disbelief");        
-
-
         }
 
     }

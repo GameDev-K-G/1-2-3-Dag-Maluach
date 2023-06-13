@@ -20,9 +20,11 @@ public class Rotation : MonoBehaviour
     static public bool StartGame = false;
     static public bool looking = true;
     int count = 0;
-  
+    
     void Update () 
     { 
+        Debug.Log(StartGame);
+
         if(!rotate && StartGame == true)
         {
             this.StartCoroutine(RotateObject());

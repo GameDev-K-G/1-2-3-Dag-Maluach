@@ -13,8 +13,6 @@ public class Level2Starter : MonoBehaviour
      public AudioSource startAudio;
      public GameObject levelControll;
 
-
-
      void Start()
      {
           StartCoroutine(CountSequence());   
@@ -22,6 +20,7 @@ public class Level2Starter : MonoBehaviour
     
      IEnumerator CountSequence()
      {
+          Debug.Log("I'm in Level 2 script");
           countDown3.SetActive(true);//מפעיל את הספרה 3
           startAudio.Play();
           yield return new WaitForSeconds(1f);
@@ -34,6 +33,7 @@ public class Level2Starter : MonoBehaviour
           yield return new WaitForSeconds(1f);
           //    counting.Play();//הפעלת הספירה של הילדה
           Rotation.StartGame = true;//הילדה מתחילה להסתובב לספירה
+          Rotation.looking = false;//הילדה מתחילה להסתובב לספירה
           levelControll.GetComponent<Timer>().enabled = true;
           clock.SetActive(true);  
           Timer.startTimer = true;
