@@ -19626,8 +19626,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.113916524, y: 0.010464335, z: -0.0011999388, w: 0.99343455}
-  m_LocalPosition: {x: -0.10000038, y: 2.6, z: -9.820001}
-  m_LocalScale: {x: 5.6018, y: 1.0262936, z: 1.9025154}
+  m_LocalPosition: {x: -0.10000038, y: 1.725, z: -10.2}
+  m_LocalScale: {x: 5.6018, y: 0.51998293, z: 1.7335234}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1537583774}
@@ -24611,7 +24611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fd654a384cc84c73a5999425f20fcf5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fd654a384cc84c73a5999425f20fcf5, type: 3}
       propertyPath: m_LocalScale.z
@@ -24623,11 +24623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fd654a384cc84c73a5999425f20fcf5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: -0.12500003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fd654a384cc84c73a5999425f20fcf5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.06000042
+      value: -0.43999958
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8fd654a384cc84c73a5999425f20fcf5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30838,8 +30838,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537583770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.05, y: 1.15, z: -7.97}
-  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
+  m_LocalPosition: {x: 5.05, y: 0.3, z: -7.78}
+  m_LocalScale: {x: 0.5, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 963194228}
@@ -30859,7 +30859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9423272e1df6a43c393ae8731a38d130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   player: {fileID: 1908737161}
   moveHorizontal:
     m_Name: Move Horizontal

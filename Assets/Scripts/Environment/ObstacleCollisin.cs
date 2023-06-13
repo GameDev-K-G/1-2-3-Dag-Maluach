@@ -33,9 +33,9 @@ public class ObstacleCollisin : MonoBehaviour
 
         }
         if(Rotation.looking == false){
-            if(thePlayer.transform.position.y > 1.0)
+            if(thePlayer.transform.position.y > 0.0)
             {
-            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 1.0f , thePlayer.transform.position.z);
+            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, 0.3f , thePlayer.transform.position.z);
             }
 
             charModel.GetComponent<Animator>().Play("Idle");    

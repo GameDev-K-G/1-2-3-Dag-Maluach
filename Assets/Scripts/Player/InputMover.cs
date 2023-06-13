@@ -38,17 +38,9 @@ public class InputMover: MonoBehaviour {
         moveHorizontal.Disable();
         moveVertical.Disable();
     }
-    void Start(){
-        this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
-        currentSpeed= speed;
-    }
+
     void Update() 
     {
-        if(this.transform.parent==null && isJumping==false && !Input.GetKey(KeyCode.Space))
-        {
-            this.transform.position=new Vector3(this.transform.position.x, 1.0f, this.transform.position.z);
-
-        }
         if(canMove == true)
         {
             if(boosting == true) 
@@ -138,13 +130,13 @@ public class InputMover: MonoBehaviour {
         {
             speedAudio.Play();
             player.GetComponent<Animator>().Play("Fast Run");
-            currentSpeed = (2 * currentSpeed);
+            currentSpeed = (2 * speed) - 5;
             boosting = true;
             Destroy(other.gameObject);
         }
           if(other.tag == "Enemy")
         {
-            currentSpeed = currentSpeed/5;
+            currentSpeed = speed-8.0f;
             injured = true;
         }
         if(other.tag == "Finish")
