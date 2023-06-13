@@ -20,7 +20,7 @@ public class Win : MonoBehaviour
     {
       winScreen.SetActive(false);
 
-        highscore.SetActive(true);
+      highscore.SetActive(true);
     }
 
     IEnumerator EndScreen()
