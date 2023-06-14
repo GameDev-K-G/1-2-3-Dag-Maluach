@@ -98,7 +98,7 @@ public class InputMover: MonoBehaviour {
                     isJumping= true;
                     notMove= true;
 
-                    if(transform.position.y<8){
+                    if(transform.position.y<20){
                         isJumping= true;
                         // StartCoroutine(JumpSequence());
                         movementVector = new Vector3(horizontal, gravity , vertical) * currentSpeed * Time.deltaTime;
