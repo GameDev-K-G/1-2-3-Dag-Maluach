@@ -25,7 +25,6 @@ public class HS2 : MonoBehaviour
         entryTemplate.gameObject.SetActive(false);
 
  
-        ClearHighScores ();
         Text textComponent = Timer.GetComponent<Text>();
 
 // Retrieve the text value as a string
