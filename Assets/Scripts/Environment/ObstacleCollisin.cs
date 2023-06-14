@@ -30,7 +30,7 @@ public class ObstacleCollisin : MonoBehaviour
      {
         yield return new WaitForSeconds(2f);
         InputMover.notCrash = true;
-            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, thePlayer.transform.position.y , thePlayer.transform.position.z-2.0f);
+            thePlayer.transform.position = new Vector3(thePlayer.transform.position.x, thePlayer.transform.position.y , thePlayer.transform.position.z-1.0f);
             this.gameObject.GetComponent<BoxCollider>().enabled = true; 
 
         // thePlayer.GetComponent<InputMover>().enabled = true;
