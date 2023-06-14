@@ -23,7 +23,6 @@ public class Rotation : MonoBehaviour
     
     void Update () 
     { 
-        Debug.Log(StartGame);
 
         if(!rotate && StartGame == true)
         {
