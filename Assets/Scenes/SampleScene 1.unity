@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4510929, g: 0.49963516, b: 0.56726074, a: 1}
+  m_IndirectSpecularColor: {r: 0.45109266, g: 0.49963456, b: 0.56726027, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5967,6 +5967,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8b7bb18f40d7476d95ca25a746ee04b, type: 3}
+--- !u!4 &324287804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6947468525587639935, guid: d8b7bb18f40d7476d95ca25a746ee04b, type: 3}
+  m_PrefabInstance: {fileID: 324287803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &324814811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c83f502368bab8140af79867b14e99c9, type: 3}
@@ -7238,6 +7243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 399335461}
+  - component: {fileID: 399335462}
   m_Layer: 0
   m_Name: Mosters
   m_TagString: Untagged
@@ -7259,11 +7265,10 @@ Transform:
   m_Children:
   - {fileID: 601361939}
   - {fileID: 1122557200}
-  - {fileID: 790406151}
+  - {fileID: 324287804}
   - {fileID: 419169751}
   - {fileID: 1800795136}
   - {fileID: 728328464}
-  - {fileID: 844466228}
   - {fileID: 444463925}
   - {fileID: 339364272}
   m_Father: {fileID: 1004088181}
@@ -14342,11 +14347,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a63f37915e8bb45a79ce4f763d2cfcb5, type: 3}
---- !u!4 &844466228 stripped
+--- !u!4 &844466228
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 6947468525587639935, guid: d8b7bb18f40d7476d95ca25a746ee04b, type: 3}
-  m_PrefabInstance: {fileID: 793425211}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284630867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &844511506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18780,7 +18795,7 @@ RectTransform:
   m_Children:
   - {fileID: 2076599593}
   m_Father: {fileID: 860878607}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -20534,7 +20549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6947468525587639935, guid: d8b7bb18f40d7476d95ca25a746ee04b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 64.9
+      value: 62.4
       objectReference: {fileID: 0}
     - target: {fileID: 6947468525587639935, guid: d8b7bb18f40d7476d95ca25a746ee04b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21243,6 +21258,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd654a384cc84c73a5999425f20fcf5, type: 3}
+--- !u!1 &1284630867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844466228}
+  m_Layer: 0
+  m_Name: 'Recovery GameObject for Transform (ID in file: 844466228)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1294428860
 GameObject:
   m_ObjectHideFlags: 0
@@ -32613,7 +32644,7 @@ RectTransform:
   m_Children:
   - {fileID: 1338518039}
   m_Father: {fileID: 860878607}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -32931,6 +32962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1796178453}
+  - component: {fileID: 1796178454}
   m_Layer: 0
   m_Name: Mosters
   m_TagString: Untagged
