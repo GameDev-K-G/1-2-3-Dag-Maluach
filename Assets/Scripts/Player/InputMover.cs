@@ -62,7 +62,6 @@ public class InputMover: MonoBehaviour {
                     currentSpeed = speed;
                     boostTimer = 0;
                     boosting = false;
-                    // player.GetComponent<Animator>().Play("Idle");  
 
                 }
             }
@@ -76,19 +75,9 @@ public class InputMover: MonoBehaviour {
                     injured = false;
                 }
             } 
-            // if(Input.GetKey(KeyCode.Space))
-            // {
-            //     if(isJumping == false)
-            //     {
-            //         notMove= false;//לא יופעל על השחקן האנימציה שהוא לא זז
-            //         isJumping = true;
-            //         player.GetComponent<Animator>().Play("Jump");
-            //         StartCoroutine(JumpSequence());
-            //     }
-            // }
-               float horizontal = moveHorizontal.ReadValue<float>();
-               float vertical = moveVertical.ReadValue<float>();
-                Vector3 movementVector = new Vector3(horizontal, 0, vertical) * currentSpeed * Time.deltaTime;
+            float horizontal = moveHorizontal.ReadValue<float>();
+            float vertical = moveVertical.ReadValue<float>();
+            Vector3 movementVector = new Vector3(horizontal, 0, vertical) * currentSpeed * Time.deltaTime;
                 
                  if(Input.GetKey(KeyCode.Space))
                 {
@@ -100,7 +89,6 @@ public class InputMover: MonoBehaviour {
 
                     if(transform.position.y<20){
                         isJumping= true;
-                        // StartCoroutine(JumpSequence());
                         movementVector = new Vector3(horizontal, gravity , vertical) * currentSpeed * Time.deltaTime;
                         transform.position += movementVector;
                     }
@@ -112,8 +100,6 @@ public class InputMover: MonoBehaviour {
                         
                     }
                     
-
-
                 }
            else if (cc.isGrounded) 
             {
@@ -133,24 +119,7 @@ public class InputMover: MonoBehaviour {
                 movementVector = new Vector3(horizontal, 0 , vertical) * currentSpeed * Time.deltaTime;
                 transform.position += movementVector;
             }
-            //  velocity = transform.TransformDirection(velocity);
-            //  cc.Move(velocity * Time.deltaTime);
         }
-        // if(isJumping == true)
-        // {
-        //     // if(comingDown == false)
-        //     // {
-        //         // velocity.y += gravity*Time.deltaTime;
-        //         transform.Translate(Vector3.up * Time.deltaTime * 15 *Time.deltaTime, Space.World);//קפיצה למעלה
-        //     // }
-        //      if(comingDown == true)
-        //     {
-        //         transform.Translate(Vector3.up * Time.deltaTime * -15 * Time.deltaTime, Space.World);//חזרה לאדמה
-        //         // velocity.y -= gravity*Time.deltaTime;
-        //          notMove = true;
-        //     }
-        // }
-       
 
        if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.LeftArrow)  && !Input.GetKey(KeyCode.RightArrow) && notMove == false && notCrash == true && Rotation.looking == false && !finish)
         {  

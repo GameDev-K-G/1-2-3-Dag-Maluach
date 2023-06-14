@@ -9,6 +9,6 @@ public class RestartGame : MonoBehaviour
     public void Restart()
     {
          InputMover.finish = false;
-         SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex - 2);
+         SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex - 3);
     }
 }
