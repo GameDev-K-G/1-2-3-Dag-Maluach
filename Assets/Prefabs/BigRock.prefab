@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dac9d35979417416b97511b53401f06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thePlayer: {fileID: 3355499679855747347, guid: f26f6a3ef11f94841a29312bd2832d23, type: 3}
+  thePlayer: {fileID: 0}
   charModel: {fileID: 0}
   crashThud: {fileID: 0}
 --- !u!54 &3637990794203880941

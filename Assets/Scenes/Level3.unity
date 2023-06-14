@@ -1292,6 +1292,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &43410762 stripped
@@ -7633,6 +7637,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (11)
@@ -9409,6 +9417,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &312097070 stripped
@@ -10198,6 +10210,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (8)
@@ -12201,6 +12217,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &410887767 stripped
@@ -14386,6 +14406,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &473909560 stripped
@@ -15979,6 +16003,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -17020,6 +17048,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -17250,6 +17282,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &561306089 stripped
@@ -17272,6 +17308,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -18129,6 +18169,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &591646296 stripped
@@ -18862,6 +18906,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock
@@ -19221,6 +19269,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -20850,6 +20902,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &652790084 stripped
@@ -22517,6 +22573,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -24308,6 +24368,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -28178,6 +28242,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &902279222 stripped
@@ -28200,6 +28268,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -31878,6 +31950,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1001320423 stripped
@@ -34388,6 +34464,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (4)
@@ -35702,6 +35782,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (9)
@@ -35793,6 +35877,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -35960,6 +36048,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -36739,6 +36831,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1163088188 stripped
@@ -37474,6 +37570,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 3972587825089848004, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.8
@@ -38332,6 +38432,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (15)
@@ -38378,6 +38482,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -39458,6 +39566,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (3)
@@ -39532,6 +39644,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1251666846 stripped
@@ -40339,6 +40455,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (1)
@@ -42817,6 +42937,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (10)
@@ -44818,6 +44942,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (5)
@@ -46478,6 +46606,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -47473,6 +47605,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1485344693 stripped
@@ -48011,6 +48147,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (2)
@@ -48888,6 +49028,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (13)
@@ -49794,7 +49938,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537583770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.05, y: 1, z: 207.8}
+  m_LocalPosition: {x: 5.05, y: 1, z: -7.7}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -51025,6 +51169,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -52781,6 +52929,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1626783922 stripped
@@ -53243,6 +53395,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -53538,6 +53694,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (12)
@@ -53564,6 +53724,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -53824,6 +53988,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1654145869 stripped
@@ -54112,6 +54280,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -54234,6 +54406,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock
@@ -55533,6 +55709,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (6)
@@ -58102,6 +58282,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1761936369 stripped
@@ -58433,6 +58617,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 8192842204607769169, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 8192842204607769174, guid: f8ca0d8b00f514618ad7980203f64b9f, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -58695,6 +58883,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1778864031 stripped
@@ -62436,6 +62628,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (7)
@@ -62669,6 +62865,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 1125940106764611764, guid: 61df768bc426e44548dba4598248d694, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     - target: {fileID: 7905474689222304631, guid: 61df768bc426e44548dba4598248d694, type: 3}
       propertyPath: m_Name
       value: Rock (14)
@@ -63721,6 +63921,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1918392557 stripped
@@ -66478,6 +66682,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &1993848050 stripped
@@ -68131,6 +68339,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &2035986728 stripped
@@ -68286,6 +68498,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &2039888477 stripped
@@ -70529,6 +70745,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &2129761669 stripped
@@ -70733,6 +70953,10 @@ PrefabInstance:
       propertyPath: crashThud
       value: 
       objectReference: {fileID: 1294428861}
+    - target: {fileID: 3972587824186709543, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 1537583770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba058bbecee0946969f17b29e8c70af6, type: 3}
 --- !u!4 &2147389183 stripped
