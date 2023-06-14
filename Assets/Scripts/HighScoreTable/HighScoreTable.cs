@@ -37,7 +37,6 @@ public class HighScoreTable : MonoBehaviour
         //     new HighScoreEntry{ score =209, name= "Amir" }    
         // };
         // Sort entry list by Score
-        ClearHighScores ();
         Text textComponent = Timer.GetComponent<Text>();
 
 // Retrieve the text value as a string
