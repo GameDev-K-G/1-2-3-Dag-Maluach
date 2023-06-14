@@ -185,7 +185,7 @@ public class InputMover: MonoBehaviour {
         if(other.tag == "speedBoost")
         {
             speedAudio.Play();
-            currentSpeed += (1.7f * currentSpeed);
+            currentSpeed = (1.7f * currentSpeed);
             boosting = true;
             Destroy(other.gameObject);
         }
